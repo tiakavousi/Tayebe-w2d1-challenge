@@ -84,4 +84,4 @@ Anything that fails validation returns `400`. Extra fields (including a client-s
     "creation_date": "2026-09-14",
     "rate": 5
 }
-```# Tayebe-w2d1-challenge
+```
