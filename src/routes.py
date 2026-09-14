@@ -40,7 +40,7 @@ def create_recipe(payload):
     new_recipe = {
         "id": max((r["id"] for r in data.recipes), default=0) + 1,
         **valid.model_dump(),
-        "creation_date": datetime.date.today().isoformat(),
+        "creation_date": datetime.datetime.now(tz=datetime.UTC).date().isoformat(),
     }
     data.recipes.append(new_recipe)
     return 201, new_recipe

@@ -1,6 +1,5 @@
 import copy
 
-
 INITIAL_RECIPES = [
     {
         "id": 1,
